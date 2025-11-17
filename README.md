@@ -189,10 +189,6 @@ Server runs at: **http://127.0.0.1:8000**
 
 <img width="1920" height="3519" alt="Step 1 Upload Document" src="https://github.com/user-attachments/assets/62c67485-3297-4242-894c-9495c16bf036" />
 
-<img src="https://github.com/user-attachments/assets/62c67485-3297-4242-894c-9495c16bf036" alt="Step 1 Upload Document" style="width:40%;" />
-
-
-
 1. Open http://127.0.0.1:8000/docs
 2. Expand **POST /upload/**
 3. Click "Try it out"
@@ -201,6 +197,9 @@ Server runs at: **http://127.0.0.1:8000**
 6. Note the returned `doc_id`
 
 #### Step 2: Get Compliance Report
+
+<img width="1920" height="3760" alt="Sep 2 Get Compliance Report" src="https://github.com/user-attachments/assets/6196dd6c-b843-40c2-b6e9-56491dd8d232" />
+
 
 1. Expand **GET /report/{doc_id}**
 2. Enter the `doc_id` from step 1
@@ -224,12 +223,18 @@ Example response:
 
 #### Step 3: Apply Corrections
 
+<img width="1920" height="3312" alt="Step 3 Apply Corrections" src="https://github.com/user-attachments/assets/ce0c7bce-8612-4789-bd09-5903c9a88c24" />
+
+
 1. Expand **POST /fix/{doc_id}**
 2. Enter the `doc_id`
 3. Click "Execute"
 4. Returns corrected text
 
 #### Step 4: Download Fixed Document
+
+<img width="1920" height="3358" alt="Step 4 Download Fixed Document" src="https://github.com/user-attachments/assets/04d2c776-e2a9-4216-8528-341b7d7b60a2" />
+
 
 1. Expand **GET /download/fixed/{doc_id}**
 2. Enter the `doc_id`
@@ -239,10 +244,14 @@ Example response:
 ### Agentic Flow (Job-Based Workflow)
 
 #### Step 1: Upload Document
+<img width="1920" height="3519" alt="Step 1 Upload Document" src="https://github.com/user-attachments/assets/9e5f2180-0300-46e5-8155-c95c05f5c9a2" />
 
 Same as traditional flow (Step 1 above).
 
 #### Step 2: Create Agent Job
+
+<img width="1920" height="6261" alt="Step 2 Create Agent Job" src="https://github.com/user-attachments/assets/8d4ef50e-cf48-4054-a49f-5c30e0c01344" />
+
 
 **Swagger UI:**
 1. Expand **POST /agent/jobs**
@@ -278,6 +287,9 @@ Expected response:
 ```
 
 #### Step 3: Poll Job Status
+
+<img width="1920" height="3868" alt="Step 3 Poll Job Status" src="https://github.com/user-attachments/assets/cdee4ecf-5d85-4efc-98f3-03ce07e85950" />
+
 
 **Swagger UI:**
 1. Expand **GET /agent/jobs/{job_id}**
