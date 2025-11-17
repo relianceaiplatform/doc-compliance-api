@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+python-multipart
+pdfplumber
+python-docx
+language_tool_python
+python-multipart
+pytesseract
+pdf2image
+python-magic
+pytest
+httpx
+pytest-asyncio
