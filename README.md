@@ -187,6 +187,12 @@ Server runs at: **http://127.0.0.1:8000**
 
 #### Step 1: Upload Document
 
+<img width="1920" height="3519" alt="Step 1 Upload Document" src="https://github.com/user-attachments/assets/62c67485-3297-4242-894c-9495c16bf036" />
+
+<img src="https://github.com/user-attachments/assets/62c67485-3297-4242-894c-9495c16bf036" alt="Step 1 Upload Document" style="width:40%;" />
+
+
+
 1. Open http://127.0.0.1:8000/docs
 2. Expand **POST /upload/**
 3. Click "Try it out"
