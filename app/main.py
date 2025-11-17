@@ -23,12 +23,14 @@ from app.api.report import router as _report
 from app.api.fix import router as _fix
 from app.api.download import router as _download
 from app.api.health import router as _health
+from app.api.agent import router as _agent
 
 app.include_router(_upload)
 app.include_router(_report)
 app.include_router(_fix)
 app.include_router(_download)
 app.include_router(_health)
+app.include_router(_agent)
 
 
 @app.get("/")
