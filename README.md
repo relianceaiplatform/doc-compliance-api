@@ -356,6 +356,37 @@ Invoke-RestMethod -Uri "http://127.0.0.1:8000/download/fixed/$doc_id" `
   -OutFile "fixed_document.docx"
 ```
 
+## Relationship betwen "doc_id" and "job_id"
+
+```
+UPLOAD → doc_id ("D123")
+
+           +--------------------+
+           |   Document D123    |
+           | original.txt        |
+           | extracted.txt       |
+           | fixed_D123.docx     |
+           +--------------------+
+
+           |
+           ▼
+CREATE JOB → job_id ("J999")
+           |
+           ▼
+   +-------------------------+
+   | Agent Job J999          |
+   | doc_id = D123           |
+   | goal = "...tone..."     |
+   | status = running        |
+   | logs = [...]            |
+   +-------------------------+
+
+           |
+           ▼
+JOB FINISHED → writes fixed file under doc_id folder
+
+DOWNLOAD → uses doc_id
+```
 ---
 
 ## 📊 Job Persistence & Logs
